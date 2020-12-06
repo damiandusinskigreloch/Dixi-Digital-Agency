@@ -115,7 +115,7 @@ header{
 .showcase{
   position: relative;
   height: 40vh;
-  background: url('/img/showcase-sm.jpg') no-repeat center center/cover;
+  background: url('../img/showcase-sm.jpg') no-repeat center center/cover;
 }
 .showcase-text-box{
   position: absolute;
