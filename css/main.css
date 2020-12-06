@@ -49,6 +49,9 @@ header{
   height: 110px;
   padding: 30px;
 }
+.top-bar{
+  box-shadow: 0 1px 4px #333;
+}
 
 .logo{
   width: 70px;
