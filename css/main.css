@@ -226,7 +226,7 @@ color: #333;
 
 .contact {
   padding-top: 40px;
-  background-color: #333;
+  background-color: #4a5568;
   color: #eee;
 }
 .contact-box{
@@ -239,7 +239,7 @@ color: #333;
   text-transform: uppercase;
 }
 .contact-box a{
-  color: #eee;
+  color: #fff;
 }
 .contact-box p{
   font-size: 1.6rem;
@@ -267,6 +267,101 @@ textarea{
 footer{
   padding: 25px 0;
   text-align: center;
-  background-color: #333;
+  background-color: #4a5568;
   color: #eee;
 }
+
+/* About Us sub-page */
+.intro-about-us{
+  position: relative;
+  padding-bottom: 50px;
+}
+.intro-about-us::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 90%;
+  height: 1px;
+  background-color: #ddd;
+  transform: translateX(-50%);
+}
+.about-us-header{
+  font-size: 4rem;
+  color: #333;
+}
+.intro-about-us .container p{
+  font-size: 2.2rem;
+}
+
+.intro-about-us > .container > p:nth-child(2){
+  margin: 20px 0 40px;
+}
+
+.raport{
+
+}
+
+.about-us-secondary-header{
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.initiative-container{
+  margin-top: 25px;
+}
+.initiative-box{
+  position: relative;
+  padding: 10px 10px;
+  
+  border-top: 1px solid #ddd;
+}
+.initiative-box:last-child{
+  border-bottom: 1px solid #ddd;
+}
+.initiative-box h5{
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.initiative-box h5 > i{
+  margin-right: 10px;
+}
+.btn-show-more{
+  font-size: 2.2rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+
+.initiative-box p{
+  display: none;
+}
+.team-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.member-box{
+  flex-basis: 50%;
+  display: block;
+  margin: 10px 0 40px;
+  text-align: center;
+}
+.member-box img{
+  display: block;
+  width: 120px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.member-box h4{
+  margin-top: 15px;
+  font-size: 1.4rem;
+}
+.member-box p { 
+  font-size: 1.2rem;
+}
+
