@@ -275,41 +275,13 @@ footer{
 }
 
 /* About Us sub-page */
-.intro-about-us{
-  position: relative;
-  padding-bottom: 50px;
-}
-.intro-about-us::after{
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 90%;
-  height: 1px;
-  background-color: #ddd;
-  transform: translateX(-50%);
-}
-.about-us-header{
-  font-size: 4rem;
-  color: #333;
-}
-.intro-about-us .container p{
+
+.intro-subpage .container p{
   font-size: 2.2rem;
 }
 
-.intro-about-us > .container > p:nth-child(2){
+.intro-subpage > .container > p:nth-child(2){
   margin: 20px 0 40px;
-}
-
-.raport{
-
-}
-
-.about-us-secondary-header{
-  font-size: 2.4rem;
-  text-transform: uppercase;
-  font-weight: 300;
-  margin-bottom: 10px;
 }
 
 .initiative-container{
@@ -374,3 +346,7 @@ footer{
   font-size: 1.2rem;
 }
 
+/* Consulting */
+.possibilities{
+  padding: 40px 0;
+}
