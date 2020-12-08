@@ -1,15 +1,19 @@
 // Production JS :)
+let navBtn = document.querySelector('.nav-btn');
+let closeBtn = document.querySelector('.close-btn');
+let mainNav = document.querySelector('.main-nav');
+let btnShowMore = document.querySelectorAll('.btn-show-more');
 
-document.querySelector('.nav-btn').addEventListener('click', () => {
-  document.querySelector('.main-nav').classList.add('show-menu');
-})
-document.querySelector('.close-btn').addEventListener('click', () => {
-  document.querySelector('.main-nav').classList.remove('show-menu');
+navBtn.addEventListener('click', () => {
+  mainNav.classList.add('show-menu');
 })
 
-var x = document.querySelectorAll('.btn-show-more');
-x.forEach(function (item) {
-  item.addEventListener('click', () => {
+closeBtn.addEventListener('click', () => {
+  mainNav.classList.remove('show-menu');
+})
+
+btnShowMore.forEach(function (btn) {
+  btn.addEventListener('click', () => {
     item.parentNode.querySelector('.text-more').classList.toggle('show');
   })
 })
