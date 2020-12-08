@@ -51,6 +51,17 @@
   background-color: #ddd;
   transform: translateX(-50%);
 }
+.intro-subpage .container .lead{
+  font-size: 2.6rem;
+  font-weight: 200;
+}
+.intro-subpage .container .lead{
+  padding: 20px 0;
+}
+
+.subpage p {
+  padding: 15px 0;
+}
 .possibilities{
   padding: 40px 0;
 }
@@ -73,5 +84,6 @@
 }
 .testimonial .container > p{
   font-size: 2.8rem;
+  font-weight: 200;
 }
   

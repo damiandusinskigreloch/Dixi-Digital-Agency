@@ -276,13 +276,9 @@ footer{
 
 /* About Us sub-page */
 
-.intro-subpage .container p{
-  font-size: 2.2rem;
-}
 
-.intro-subpage > .container > p:nth-child(2){
-  margin: 20px 0 40px;
-}
+
+
 
 .initiative-container{
   margin-top: 25px;
@@ -348,3 +344,8 @@ footer{
 }
 
 /* Consulting */
+
+/* Applications */
+.intro-subpage .container p {
+  padding-top: 25px;
+}
