@@ -14,6 +14,6 @@ closeBtn.addEventListener('click', () => {
 
 btnShowMore.forEach(function (btn) {
   btn.addEventListener('click', () => {
-    btn.parentNode.querySelector('.text-more').classList.toggle('show');
+    btn.parentNode.querySelector('.text-more').classList.toggle("show");
   })
 })
