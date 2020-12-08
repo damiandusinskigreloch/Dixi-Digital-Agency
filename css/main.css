@@ -352,7 +352,7 @@ footer{
 /* Contact subpage*/
 .intro-contact .container{
   margin: 0;
-  padding: 40px 0 20px;
+  padding: 40px 10px 20px;
 }
 .intro-contact{
   background-color: #282f44;
