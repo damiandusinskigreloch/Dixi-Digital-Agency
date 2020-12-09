@@ -224,6 +224,30 @@ color: #333;
   font-size: 2.8rem;
   margin: 25px 0;
 }
+/* Media */
+@media (min-width: 600px){
+  
+  .join .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .join .img-box{
+    flex-basis: 45%;
+  }
+  .join .text-box{
+    flex-basis: 45%;
+  }
+  .form .form-box{
+    display: flex;
+  }
+  .form .form-box label{
+    flex-basis: 30%;
+  }
+  .form .form-box input{
+    flex-basis: 60%;
+  }
+}
 
 /* Contact section */
 
@@ -266,6 +290,27 @@ textarea{
   font-size: 2rem;
   font-family: 'Lato', sans-serif;
 }
+/* Media */
+@media (min-width: 600px){
+  form .form-box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  form .form-box label{
+    flex-basis: 30%;
+  }
+  form .form-box input{
+    flex-basis: 60%;
+  }
+  form .form-box textarea{
+    flex-basis: 60%;
+  }
+  form .submit-btn{
+    margin-left:40% ;
+    width: 60%;
+  }
+}
 /* Footer */
 footer{
   padding: 25px 0;
@@ -293,7 +338,7 @@ footer{
   border-bottom: 1px solid #ddd;
 }
 .initiative-box h5{
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 300;
 }
 .initiative-box h5 > i{
@@ -307,7 +352,7 @@ footer{
   cursor: pointer;
 }
 .text-more{
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding: 10px 0;
 }
 .text-more.show {
@@ -324,14 +369,14 @@ footer{
   margin-bottom: 40px;
 }
 .member-box{
-  flex-basis: 50%;
+  flex-basis: 40%;
   display: block;
   margin: 10px 0 40px;
   text-align: center;
 }
 .member-box img{
   display: block;
-  width: 120px;
+  width: 100%;
   border-radius: 50%;
   margin: 0 auto;
 }
@@ -341,6 +386,20 @@ footer{
 }
 .member-box p { 
   font-size: 1.2rem;
+}
+
+/* Media */
+@media (min-width: 600px){
+  
+  .member-box{
+    width: 250px;
+  }
+  .member-box h4{
+    font-size: 2rem;
+  }
+  .member-box p{
+    font-size: 1.6rem;
+  }
 }
 
 /* Consulting */
@@ -400,3 +459,4 @@ main > .contact > .container{
 .info-box:last-child{
   border-bottom: 1px solid #fff;
 }
+
