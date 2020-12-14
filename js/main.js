@@ -1,16 +1,13 @@
 // Production JS :)
-let navBtn = document.querySelector('.nav-btn');
-let closeBtn = document.querySelector('.close-btn');
-let mainNav = document.querySelector('.main-nav');
+let navBtn = document.querySelector('.top-bar__btn-container');
+let mainNav = document.querySelector('.menu');
 let btnShowMore = document.querySelectorAll('.btn-show-more');
 
 navBtn.addEventListener('click', () => {
-  mainNav.classList.add('show-menu');
+  mainNav.classList.toggle('menu--show');
 })
 
-closeBtn.addEventListener('click', () => {
-  mainNav.classList.remove('show-menu');
-})
+
 
 btnShowMore.forEach(function (btn) {
   btn.addEventListener('click', () => {

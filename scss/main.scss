@@ -1,0 +1,19 @@
+@import 'utilities/variables';
+@import 'utilities/mixins';
+
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'layout/navigation';
+@import 'layout/header';
+@import 'layout/forms';
+@import 'layout/footer';
+
+@import 'components/buttons';
+@import 'components/headers';
+
+@import 'pages/home';
+@import 'pages/specialists';
+@import 'pages/application';
+@import 'pages/consultation';
+@import 'pages/contact';

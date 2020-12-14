@@ -1,0 +1,19 @@
+$primary-color: #179258;
+$error-color: #bb2d1a;
+$white: #fdfdfd;
+$brown: #4d4040;
+$greey: #333;
+$light-greey: #b3b3b3;
+
+// $showcase-font : 'Caveat', cursive;
+// $titles-font : 'Raleway', sans-serif;
+// $paragraph-font : 'Roboto', sans-serif;
+
+$breakpoints: (
+  sm: (min-width:568px),
+  md: (min-width:760px),
+  lg: (min-width:1024px),
+  xlg: (min-width:1200px),
+  xxlg: (min-width:1440px),
+  );
+

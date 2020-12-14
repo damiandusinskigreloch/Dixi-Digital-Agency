@@ -7,44 +7,32 @@
   <link rel="stylesheet" href="css/utilities.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Dixi</title>
+  <script src="js/main.js" defer></script>
 </head>
 
 <body>
   <div class="wrapper">
-    <header>
-      <!-- Navigation -->
-      <div class="top-bar">
-        <div class="logo-container"><img class="logo" src="img/logo.png" alt="Dixi logo"></div>
-        <div class="main-nav">
-          <div class="menu-container">
-            <div class="menu-topbar">
-              <div class="logo-container"><img class="logo" src="img/logo.png" alt="Dixi logo"></div>
-              <div class="close-btn"><i class="fas fa-times fa-3x"></i></div>             
-            </div>
-              <nav>
-                <ul class="menu">
-                  <li><a href="./">Home</a></li>
-                  <li><a href="o-nas.html">O Nas</a></li>
-                  <li class="special-element"><a href="./oferta">Oferta</a></li>
-                  <ul>
-                    <li><a href="konsultacje.html">Konsultacje techniczne</a></li>
-                    <li><a href="aplikacje.html">Aplikacje</a></li>
-                    <li><a href="specialisci.html">Specialiści</a></li>
-                  </ul>
-                  <li ><a href="kontakt.html">Kontakt</a></li>
-                </ul>
-              </nav>
-            </div>
-        </div>
-        <div class="nav-btn"><i class="fas fa-bars fa-4x"></i></div>
+    <header class="main-header wrapper__main-header">   
+    <div class="top-bar">
+      <div class="top-bar__logo-container"><img src="img/logo.png" alt="Logo Dixi" class="top-bar__logo">
       </div>
-      <!-- Showcase -->
-      <div class="showcase">
-        <div class="showcase-text-box">
-          <h1 class="showcase-header">Doradztwo cyfrowe
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">O Nas</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Aplikacje</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Konsultacje</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Specialiści</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="top-bar__btn-container">=
+      </div>
+    </div>
+        <div class="main-header__text-container">
+          <h1 class="main-header__title">Doradztwo cyfrowe
             </br><span class="text-primary-color">dobre dla biznesu.</span></h1>
         </div>
-      </div>
     </header>
     <!-- Intro -->
     <section class="intro">
@@ -157,7 +145,6 @@
         <p>Dixi &copy; 2020 Wszystkie prawa zastrzeżone</p>
     </footer>
   </div>
-  <script src="js/main.js"></script>
 </body>
 
 </html>

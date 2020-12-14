@@ -1,0 +1,18 @@
+@mixin position-center{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin media($brackpoint){
+  $size: map-get($breakpoints, $brackpoint);
+  @if($size){
+    @media #{$size} {
+      @content;
+    }
+  }
+  @else{
+    @error '"#{$brackpoint}" - bad value';
+  }
+}

@@ -1,0 +1,20 @@
+.reservation{
+  text-align: center;
+  @include media(sm){
+    width: 500px;
+    margin: 0 auto;
+  }
+  @include media(lg){
+    width: 900px;
+    margin: 0 auto;
+  }
+  &__lead{
+    @include media(md){
+      font-size:2rem ;
+      line-height: 1.6;
+    }
+  }
+  &__header{
+    padding: 10px;
+  }
+}
