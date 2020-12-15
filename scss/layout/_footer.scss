@@ -1,0 +1,10 @@
+.footer{
+  padding: 20px 10px;
+  background: $greey;
+  text-align: center;
+  &__lead{
+    color: $white;
+    font-weight: 200;
+    font-size: 1.6rem;
+  }
+}

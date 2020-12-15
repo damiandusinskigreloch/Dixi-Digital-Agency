@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,140 +12,136 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <header class="main-header wrapper__main-header">   
-    <div class="top-bar">
-      <div class="top-bar__logo-container"><img src="img/logo.png" alt="Logo Dixi" class="top-bar__logo">
+    <header class="main-header">
+      <div class="top-bar">
+        <div class="top-bar__logo-container"><img src="img/logo.png" alt="Logo Dixi" class="top-bar__logo">
+        </div>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">O Nas</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Aplikacje</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Konsultacje</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Specialiści</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Kontakt</a></li>
+          </ul>
+        </nav>
+        <div class="top-bar__btn-container">=
+        </div>
       </div>
-      <nav class="menu">
-        <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">O Nas</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Aplikacje</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Konsultacje</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Specialiści</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Kontakt</a></li>
-        </ul>
-      </nav>
-      <div class="top-bar__btn-container">=
-      </div>
-    </div>
+      <div class="main-header__showcase">
         <div class="main-header__text-container">
           <h1 class="main-header__title">Doradztwo cyfrowe
             </br><span class="text-primary-color">dobre dla biznesu.</span></h1>
         </div>
+      </div>
     </header>
     <!-- Intro -->
     <section class="intro">
-      <div class="container">
-        <h2>Wdrażamy <span class="text-primary-color">strategie</span> , <span class="text-primary-color">design</span> i <span class="text-primary-color">rozwiązania</span>  dla inspirujących firm.</h2>
-        <p>Dixi to zwinny zespół złożony z wysoce produktywnych talentów. Tworzymy bezpieczne, skalowalne aplikacje dla przedsiębiorstw i obsługujemy złożone ekosystemy cyfrowe w imieniu naszych klientów.</p>
-      </div>
+        <h2 class="home-secondary-title">Wdrażamy <span class="text-primary-color">strategie</span> , <span class="text-primary-color">design</span>
+          i <span class="text-primary-color">rozwiązania</span> dla inspirujących firm.</h2>
+        <p class="intro__lead">Dixi to zwinny zespół złożony z wysoce produktywnych talentów. Tworzymy bezpieczne, skalowalne aplikacje dla
+          przedsiębiorstw i obsługujemy złożone ekosystemy cyfrowe w imieniu naszych klientów.</p>
     </section>
     <main>
       <!-- Servises -->
       <section class="services">
-        <div class="container">
-          <div class="service-box">
-            <i class="far fa-life-ring"></i>
-            <h3>Doradztwo technologiczne</h3>
-            <p>Popraw użyteczność, wydajność, bezpieczeństwo i skalowalność aplikacji korporacyjnych.</p>
-            <a href="konsultacje.html">Czytaj więcej</a>
+          <div class="services__box">
+            <i class="far fa-life-ring fa-8x"></i>
+            <h3 class="services__title">Doradztwo technologiczne</h3>
+            <p class="services__lead">Popraw użyteczność, wydajność, bezpieczeństwo i skalowalność aplikacji korporacyjnych.</p>
+            <a class="services__link" href="konsultacje.html">Czytaj więcej</a>
           </div>
-          <div class="service-box">
-            <i class="fas fa-desktop"></i>
-            <h3>Tworzenie aplikacji</h3>
-            <p>Zarządzanie i dostarczanie niestandardowych aplikacji internetowych i mobilnych od początku do uruchomienia.</p>
-            <a href="konsultacje.html">Czytaj więcej</a>
+          <div class="services__box">
+            <i class="fas fa-desktop fa-8x"></i>
+            <h3 class="services__title">Tworzenie aplikacji</h3>
+            <p class="services__lead">Zarządzanie i dostarczanie niestandardowych aplikacji internetowych i mobilnych od początku do
+              uruchomienia.</p>
+            <a class="services__link" href="konsultacje.html">Czytaj więcej</a>
           </div>
-          <div class="service-box">
-            <i class="fas fa-users"></i>
-            <h3>Wzrost personelu</h3>
-            <p>Dedykowane zespoły techniczne, gdy ich potrzebujesz. Wiedza, której potrzebujesz, na żądanie.</p>
-            <a href="konsultacje.html">Czytaj więcej</a>
+          <div class="services__box">
+            <i class="fas fa-users fa-8x"></i>
+            <h3 class="services__title">Wzrost personelu</h3>
+            <p class="services__lead">Dedykowane zespoły techniczne, gdy ich potrzebujesz. Wiedza, której potrzebujesz, na żądanie.</p>
+            <a class="services__link" href="konsultacje.html">Czytaj więcej</a>
           </div>
-        </div>
       </section>
       <!-- Values -->
       <section class="values">
-        <div class="container">
-          <h2>Jak zapewniamy</br><span class="text-primary-color">pracę z wpływem.</span></h2>
-          <p>Wszystko, co robimy, koncentruje się na tworzeniu celowej pracy, która ma wpływ. Te trzy wartości leżą u podstaw wszystkiego, co robimy. Znajdziesz je utkane w każdym aspekcie naszej agencji. Jeśli również wierzysz w te rzeczy, są szanse, że dobrze byśmy razem pracowali.</p>
+          <h2 class="home-secondary-title">Jak zapewniamy</br><span class="text-primary-color">pracę z wpływem.</span></h2>
+          <p class="values__lead">Wszystko, co robimy, koncentruje się na tworzeniu celowej pracy, która ma wpływ. Te trzy wartości leżą u
+            podstaw wszystkiego, co robimy. Znajdziesz je utkane w każdym aspekcie naszej agencji. Jeśli również
+            wierzysz w te rzeczy, są szanse, że dobrze byśmy razem pracowali.</p>
           <img src="img/values-1-sm.jpg" alt="People in office">
-          <div class="value-box">
-            <h4>Zaangażować się</h4>
-            <p>Wierzymy, że warto angażować się we wszystko, co robimy, naprawdę się w to zagłębiać i zadawać trudne pytania. Lubimy naprawdę angażować się (we wszystkie aspekty) naszej pracy, naszych klientów i naszą społeczność.</p>
+          <div class="values__box">
+            <h4 class="values__title">Zaangażować się</h4>
+            <p class="values__lead"> Wierzymy, że warto angażować się we wszystko, co robimy, naprawdę się w to zagłębiać i zadawać trudne
+              pytania. Lubimy naprawdę angażować się (we wszystkie aspekty) naszej pracy, naszych klientów i naszą
+              społeczność.</p>
           </div>
-          <div class="value-box">
-            <h4>Robić co należy</h4>
-            <p>Czasami właściwe postępowanie jest łatwe, a czasami nie. Ale wierzymy, że zawsze staramy się robić to, co słuszne, niezależnie od popularności, a nawet wtedy, gdy nikt nie patrzy.</p>
+          <div class="values__box">
+            <h4 class="values__title">Robić co należy</h4>
+            <p class="values__lead">Czasami właściwe postępowanie jest łatwe, a czasami nie. Ale wierzymy, że zawsze staramy się robić to, co
+              słuszne, niezależnie od popularności, a nawet wtedy, gdy nikt nie patrzy.</p>
           </div>
-          <div class="value-box">
-            <h4>Baw się dobrze</h4>
-            <p>Wierzymy w tworzenie atmosfery, która sprzyja zabawie podczas pracy. Wierzymy, że możemy poważnie traktować naszą pracę, nie traktując siebie zbyt poważnie.</p>
+          <div class="values__box">
+            <h4 class="values__title">Baw się dobrze</h4>
+            <p class="values__lead">Wierzymy w tworzenie atmosfery, która sprzyja zabawie podczas pracy. Wierzymy, że możemy poważnie
+              traktować naszą pracę, nie traktując siebie zbyt poważnie.</p>
           </div>
-        </div>
       </section>
       <div class="prize">
-        <img src="img/prize.jpg" alt="Nagroda za 2020">
-        <div class="line"></div>
+        <img class="prize__img" src="img/prize.jpg" alt="Nagroda za 2020">
       </div>
     </main>
     <!-- Join -->
     <section class="join">
-      <div class="container">
-        <div class="img-box">
-          <img src="img/dixi-team-sm.jpg" alt="meeting">
+        <div class="join__img-box">
+          <img class="join-img" src="img/dixi-team-sm.jpg" alt="meeting">
         </div>
-        <div class="text-box">
-          <h2>Chcesz dołączyć do <span class="text-primary-color">Team Dixi?</span></h2>
-          <p>Zawsze szukamy wspaniałych ludzi, którzy dołączyliby do zespołu. Daj nam znać, jakie są Twoje mocne strony i czego szukasz w nowej pracy.</p>
-          <a class="primary-btn" href="kontakt.html">Napisz do Nas</a>
-        </div>
-          
-
+        <div class="join__text-box">
+          <h2 class="home-secondary-title">Chcesz dołączyć do <span class="text-primary-color">Team Dixi?</span></h2>
+          <p class="join__lead">Zawsze szukamy wspaniałych ludzi, którzy dołączyliby do zespołu. Daj nam znać, jakie są Twoje mocne strony
+            i czego szukasz w nowej pracy.</p>
+          <a class="button join__button" href="kontakt.html">Napisz do Nas</a>
       </div>
     </section>
     <!-- Contact -->
     <section class="contact">
-      <div class="container">
-        <div class="contact-box">
-          <h4>Lokalizacja</h4>
-          <p>Ul. Powstańców Wielkopolskich 112, Kraków 30-634</p>
+        <div class="contact__box">
+          <p class="contact__title">Lokalizacja</p>
+          <p class="contact__adres">Ul. Powstańców Wielkopolskich 112, Kraków 30-634</p>
         </div>
-        <div class="contact-box">
-          <h4>Współpraca</h4>
-          <a href="mailto:wspolpraca@dixi.pl">wspolpraca@dixi.pl</a>
+        <div class="contact__box">
+          <p class="contact__title">Współpraca</p>
+          <a class="contact__link" href="mailto:wspolpraca@dixi.pl">wspolpraca@dixi.pl</a>
         </div>
-        <div class="contact-box">
-          <h4>Napisz do Nas</h4>
-          <a href="mailto:info@dixi.pl">info@dixi.pl</a>
+        <div class="contact__box">
+          <p class="contact__title">Napisz do Nas</p>
+          <a class="contact__link" href="mailto:info@dixi.pl">info@dixi.pl</a>
         </div>
-        <div class="contact-box">
-          <h4>Bądz na bieżąco</h4>
-          <a href="https://twitter.com/">@dixi</a>
+        <div class="contact__box">
+          <p class="contact__title">Bądz na bieżąco</p>
+          <a class="contact__link" href="https://twitter.com/">@dixi</a>
         </div>
-        <div class="contact-box">
-          <h4>Sey Hello</h4>
-          <form action="">
-            <div class="form-box">            
-              <label for="name">Imię</label><input type="text" name="name" required placeholder="Adam Nowak"></div>
-            <div class="form-box"> 
-            <label for="email">Email</label><input type="email" name="email" required placeholder="nowak@gmail.com">
+          <form class="form" action="">
+            <p class="contact__title">Sey Hello</p>
+            <div class="form__box">
+              <label class="form__label" for="name">Imię</label><input class="form__input" type="text" name="name" required placeholder="Adam Nowak"></div>
+            <div class="form__box">
+              <label class="form__label" for="email">Email</label><input class="form__input" type="email" name="email" required placeholder="nowak@gmail.com">
             </div>
-            <div class="form-box"> 
-            <label for="message">Twoja myśl</label><textarea name="message"  rows="10" required placeholder="Twój genialny pomysł"></textarea>
+            <div class="form__box">
+              <label class="form__label" for="message">Twoja myśl</label><textarea class="form__textarea" name="message" rows="10" required
+                placeholder="Twój genialny pomysł"></textarea>
             </div>
-            <button class="submit-btn primary-btn" type="submit">Wyślij</button>
+            <button class="button form__button" type="submit">Wyślij</button>
           </form>
-        </div>
-      </div>
     </section>
     <!-- Footer -->
-    <footer>
-        <p>Dixi &copy; 2020 Wszystkie prawa zastrzeżone</p>
+    <footer class="footer">
+      <p class="footer__lead">Dixi &copy; 2020 Wszystkie prawa zastrzeżone</p>
     </footer>
-  </div>
 </body>
 
 </html>

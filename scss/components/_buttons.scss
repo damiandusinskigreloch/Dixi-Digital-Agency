@@ -3,17 +3,11 @@
   padding: 10px 25px;
   font-size: 1.8rem;
   background-color: $primary-color;
+  text-align: center;
   cursor: pointer;
+  text-transform: uppercase;
+  color: $white;
   transition: .2s ease-in;
-  @include media(md){
-    font-size: 2rem;
-    padding: 15px 30px;
-  }
-  @include media(lg){
-    &:hover{
-      background:$white;
-      color: $primary-color;
-      box-shadow: 0px 0px 2px 2px $primary-color;
-    }
-  }
+  border-radius: 5px;
+
 }

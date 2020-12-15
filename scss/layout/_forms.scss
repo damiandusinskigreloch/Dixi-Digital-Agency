@@ -1,0 +1,26 @@
+.form{
+  padding: 10px 0 20px;
+  border-top: 1px solid $light-greey;
+  &__label{
+    display: block;
+    margin:20px 0 10px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: $white;
+  }
+  
+  &__input,
+  &__textarea{
+    display:inline-block;
+    padding: 5px 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 2rem;
+    font-family: 'Lato', sans-serif;
+  }
+  &__button{
+    border: 0;
+    width: 100%;
+    margin-top: 5px;
+  }
+}
