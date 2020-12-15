@@ -1,7 +1,7 @@
 // Production JS :)
 let navBtn = document.querySelector('.top-bar__btn-container');
 let mainNav = document.querySelector('.menu');
-let btnShowMore = document.querySelectorAll('.btn-show-more');
+let btnShowMore = document.querySelectorAll('.raport__btn-show-more');
 
 navBtn.addEventListener('click', () => {
   mainNav.classList.toggle('menu--show');
@@ -11,6 +11,6 @@ navBtn.addEventListener('click', () => {
 
 btnShowMore.forEach(function (btn) {
   btn.addEventListener('click', () => {
-    btn.parentNode.querySelector('.text-more').classList.toggle("show");
+    btn.parentNode.querySelector('.raport__text-more').classList.toggle("raport__text-more--show");
   })
 })

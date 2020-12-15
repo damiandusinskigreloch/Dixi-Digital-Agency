@@ -5,15 +5,18 @@
 @import 'base/typography';
 
 @import 'layout/navigation';
+@import 'layout/subpage-header';
 @import 'layout/forms';
 @import 'layout/footer';
 @import 'layout/contact';
 
+
 @import 'components/buttons';
-@import 'components/headers';
+@import 'components/subpage-secondary-title';
 @import 'components/text-primary-color';
 
 @import 'pages/home';
+@import 'pages/about-us';
 @import 'pages/specialists';
 @import 'pages/application';
 @import 'pages/consultation';
