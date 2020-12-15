@@ -2,9 +2,13 @@
   &__container{
     padding: 40px 10px ;
   }
+  &__container--dark-blue{
+    background: $dark-blue;
+  }
   &__title{
     font-size: 3.8rem;
     margin-bottom: 20px;
+    font-weight: 400;
   }
   &__lead{
     font-size: 2rem;

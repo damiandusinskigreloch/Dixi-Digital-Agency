@@ -9,6 +9,9 @@
   &__logo-container{
     z-index: 2;
   }
+  &__logo{
+    width: 80px;
+  }
   &__btn-container{
     // production style
     font-size: 8rem;

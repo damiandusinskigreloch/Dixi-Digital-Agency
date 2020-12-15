@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,wBAAwB,CAAA;EACtB,SAAS,EAAE,MAAM;EACjB,cAAc,EAAE,SAAS;CAC1B",
-    "sources": [
-        "../components/subpage-secondary-title.scss"
-    ],
-    "names": [],
-    "file": "subpage-secondary-title.css"
-}

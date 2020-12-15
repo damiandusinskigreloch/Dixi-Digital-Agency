@@ -1,6 +1,9 @@
 .contact{
   padding: 80px 10px 40px;
-  background: $greey;
+  background: $dark-blue;
+  &--small-padding{
+    padding-top:0;
+  }
   &__box{
     padding: 20px 10px;
     border-top: 1px solid $light-greey;

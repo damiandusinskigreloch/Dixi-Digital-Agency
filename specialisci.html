@@ -1,131 +1,123 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="css/utilities.css">
   <link rel="stylesheet" href="css/main.css">
-  <title>Dixi - Aplikacje</title>
+  <title>Dixi</title>
   <script src="js/main.js" defer></script>
 </head>
 
 <body>
-  <div class="wrapper">
-    <header>
-      <!-- Navigation -->
-      <div class="top-bar">
-        <div class="logo-container"><img class="logo" src="img/logo.png" alt="Dixi logo"></div>
-        <div class="main-nav">
-          <div class="menu-container">
-            <div class="menu-topbar">
-              <div class="logo-container"><img class="logo" src="img/logo.png" alt="Dixi logo"></div>
-              <div class="close-btn"><i class="fas fa-times fa-3x"></i></div>             
-            </div>
-              <nav>
-                <ul class="menu">
-                  <li><a href="./">Home</a></li>
-                  <li><a href="o-nas.html">O Nas</a></li>
-                  <li class="special-element"><a href="./oferta">Oferta</a></li>
-                  <ul>
-                    <li><a href="konsultacje.html">Konsultacje techniczne</a></li>
-                    <li><a href="aplikacje.html">Aplikacje</a></li>
-                    <li><a href="specialisci.html">Specialiści</a></li>
-                  </ul>
-                  <li ><a href="kontakt.html">Kontakt</a></li>
-                </ul>
-              </nav>
-            </div>
-        </div>
-        <div class="nav-btn"><i class="fas fa-bars fa-4x"></i></div>
+  <header class="subpage-header">
+    <div class="top-bar">
+      <div class="top-bar__logo-container"><img src="img/logo.png" alt="Logo Dixi" class="top-bar__logo">
       </div>
-    </header>
-    <!-- Intro -->
-    <section class="intro-specialist intro-subpage">
-      <div class="container">
-        <h1 class="intro-subpage-header">Powiększanie personelu</h1>
-        <p class="lead">Najlepszy talent techniczny, który wzmocni Twój zespół.</p>
-        <p>W centrum wszystkiego, co robimy, są ludzie. Od zatrudniania najlepszych ludzi po dbanie o użytkowników - z wielką pasją poszukujemy odpowiedniego zespołu do pracy.</p>
-        <p>W Dixi <span class="text-primary-color">zatrudniamy twórców wpływów</span>. Szukamy ludzi, którzy poruszą igłą, popędzą i zgiełku, zmienią grę i wywrą natychmiastowy wpływ. Dzięki zwiększeniu liczby pracowników w Dixi, naszą obietnicą jest zatrudnienie ludzi, którzy będą naprawdę zmieniać Twój zespół technologiczny.</p>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a class="menu__link" href="./">Home</a></li>
+          <li class="menu__item"><a class="menu__link" href="o-nas.html">O Nas</a></li>
+          <li class="menu__item"><a class="menu__link" href="aplikacje.html">Aplikacje</a></li>
+          <li class="menu__item"><a class="menu__link" href="konsultacje.html">Konsultacje</a></li>
+          <li class="menu__item"><a class="menu__link" href="specialisci.html">Specialiści</a></li>
+          <li class="menu__item"><a class="menu__link" href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="top-bar__btn-container">=
       </div>
+    </div>
+    <div class="subpage-header__container">
+      <h2 class="subpage-header__title">Powiększanie personelu</h1>
+        <p class="subpage-header__lead">W centrum wszystkiego, co robimy, są ludzie. Od zatrudniania najlepszych ludzi
+          po dbanie o użytkowników - z wielką pasją poszukujemy odpowiedniego zespołu do pracy.</p>
+        <p class="subpage-header__lead">W Dixi <span class="text-primary-color">zatrudniamy twórców wpływów</span>.
+          Szukamy ludzi, którzy poruszą igłą, popędzą i zgiełku, zmienią grę i wywrą natychmiastowy wpływ. Dzięki
+          zwiększeniu liczby pracowników w Dixi, naszą obietnicą jest zatrudnienie ludzi, którzy będą naprawdę zmieniać
+          Twój zespół technologiczny.</p>
+    </div>
+  </header>
+  <main>
+    <section class="specialists">
+      <h4 class="subpage-secondary-title">Bierzemy sobie do serca słowo rozwój</h4>
+      <p class="specialists__lead">Aby ulepszyć, ulepszyć. Ciężko pracując, aby znaleźć odpowiednich ludzi, sprawimy, że Twój wspaniały zespół
+        będzie jeszcze lepszy. Kiedy pracujesz z Dixi, poświęcamy trochę czasu, aby poznać Ciebie i Twoje potrzeby
+        przed wydaniem jakichkolwiek rekomendacji dotyczących miejsca docelowego.</p>
+      <p class="specialists__lead">Ciężko pracujemy, aby znaleźć specjalistyczny krój specjalnie dla Ciebie, ponieważ właściwi ludzie mogą mieć
+        znaczenie.</p>
     </section>
-    <main>
-      <section class="specialists subpage">
-        <div class="container">
-          <h4 class="subpage-secondary-header go-right">Bierzemy sobie do serca słowo rozwój</h4>
-          <p>Aby ulepszyć, ulepszyć. Ciężko pracując, aby znaleźć odpowiednich ludzi, sprawimy, że Twój wspaniały zespół będzie jeszcze lepszy. Kiedy pracujesz z Dixi, poświęcamy trochę czasu, aby poznać Ciebie i Twoje potrzeby przed wydaniem jakichkolwiek rekomendacji dotyczących miejsca docelowego.</p>
-          <p>Ciężko pracujemy, aby znaleźć specjalistyczny krój specjalnie dla Ciebie, ponieważ właściwi ludzie mogą mieć znaczenie.</p>
-          <div class="possibilities">
-              <h4 class="subpage-secondary-header">Specjalności</h4>
-              <ul class="possibilites-list">
-                <li class="list-item">Projektowanie UX</li>
-                <li class="list-item">React</li>
-                <li class="list-item">Angular</li>
-                <li class="list-item">Architektura techniczna</li>
-                <li class="list-item">Mobile (iOS/Android)</li>
-                <li class="list-item">.NET</li>
-              </ul>
-        </div>
-      </section>
-      <section class="testimonial">
-        <div class="container">
-          <p>Dixi może pomóc w opracowaniu architektury i strategii uruchamiania, aby wprowadzić aplikacje na świat, a także utrzymywać je i odświeżać po ich uruchomieniu.
-          </p>
-        </div>
-        </section>
-        <section class="join">
-          <div class="container">
-            <div class="img-box">
-              <img src="img/dixi-team-sm.jpg" alt="meeting">
-            </div>
-            <div class="text-box">
-              <h2>Chcesz dołączyć do <span class="text-primary-color">Team Dixi?</span></h2>
-            <p>Zawsze szukamy wspaniałych ludzi, którzy dołączyliby do zespołu. Daj nam znać, jakie są Twoje mocne strony i czego szukasz w nowej pracy.</p>
-            
-            <a class="primary-btn" href="kontakt.html">Napisz do Nas</a>
-          </div>
-          </div>
-        </section>
-        </main>
-    <!-- Contact -->
-    <section class="contact">
-      <div class="container">
-        <div class="contact-box">
-          <h4>Lokalizacja</h4>
-          <p>Ul. Powstańców Wielkopolskich 112, Kraków 30-634</p>
-        </div>
-        <div class="contact-box">
-          <h4>Współpraca</h4>
-          <a href="mailto:wspolpraca@dixi.pl">wspolpraca@dixi.pl</a>
-        </div>
-        <div class="contact-box">
-          <h4>Napisz do Nas</h4>
-          <a href="mailto:info@dixi.pl">info@dixi.pl</a>
-        </div>
-        <div class="contact-box">
-          <h4>Bądz na bieżąco</h4>
-          <a href="https://twitter.com/">@dixi</a>
-        </div>
-        <div class="contact-box">
-          <h4>Sey Hello</h4>
-          <form action="">
-            <div class="form-box">            <label for="name">Imię</label><input type="text" name="name" required placeholder="Adam Nowak"></div>
-            <div class="form-box"> 
-            <label for="email">Email</label><input type="email" name="email" required placeholder="nowak@gmail.com">
-            </div>
-            <div class="form-box"> 
-            <label for="message">Twoja myśl</label><textarea name="message"  rows="10" required placeholder="Twój genialny pomysł"></textarea>
-            </div>
-            <button class="submit-btn primary-btn" type="submit">Wyślij</button>
-          </form>
-        </div>
-      </div>
+    <section class="possibilities">
+      <h4 class="subpage-secondary-title">Możliwości</h4>
+      <ul class="possibilites__list">
+        <li class="possibilities__item">Projektowanie UX</li>
+        <li class="possibilities__item">React</li>
+        <li class="possibilities__item">Angular</li>
+        <li class="possibilities__item">Architektura techniczna</li>
+        <li class="possibilities__item">Mobile (iOS/Android)</li>
+        <li class="possibilities__item">.NET</li>
+      </ul>
     </section>
-    <!-- Footer -->
-    <footer>
-        <p>Dixi &copy; 2020 Wszystkie prawa zastrzeżone</p>
-    </footer>
-  </div>
+    <section class="testimonial">
+      <p class="testimonial__lead">Dixi może pomóc w opracowaniu architektury i strategii uruchamiania, aby
+        wprowadzić
+        aplikacje na świat, a także utrzymywać je i odświeżać po ich uruchomieniu.
+      </p>
+    </section>
+  </main>
+  <!-- Join -->
+  <section class="join">
+    <div class="join__img-box">
+      <img class="join-img" src="img/dixi-team-sm.jpg" alt="meeting">
+    </div>
+    <div class="join__text-box">
+      <h2 class="home-secondary-title">Chcesz dołączyć do <span class="text-primary-color">Team Dixi?</span></h2>
+      <p class="join__lead">Zawsze szukamy wspaniałych ludzi, którzy dołączyliby do zespołu. Daj nam znać, jakie
+        są
+        Twoje mocne strony
+        i czego szukasz w nowej pracy.</p>
+      <a class="button join__button" href="kontakt.html">Napisz do Nas</a>
+    </div>
+  </section>
+  <!-- Contact -->
+  <section class="contact">
+    <div class="contact__box">
+      <p class="contact__title">Lokalizacja</p>
+      <p class="contact__adres">Ul. Powstańców Wielkopolskich 112, Kraków 30-634</p>
+    </div>
+    <div class="contact__box">
+      <p class="contact__title">Współpraca</p>
+      <a class="contact__link" href="mailto:wspolpraca@dixi.pl">wspolpraca@dixi.pl</a>
+    </div>
+    <div class="contact__box">
+      <p class="contact__title">Napisz do Nas</p>
+      <a class="contact__link" href="mailto:info@dixi.pl">info@dixi.pl</a>
+    </div>
+    <div class="contact__box">
+      <p class="contact__title">Bądz na bieżąco</p>
+      <a class="contact__link" href="https://twitter.com/">@dixi</a>
+    </div>
+    <form class="form" action="">
+      <p class="contact__title">Sey Hello</p>
+      <div class="form__box">
+        <label class="form__label" for="name">Imię</label><input class="form__input" type="text" name="name" required
+          placeholder="Adam Nowak"></div>
+      <div class="form__box">
+        <label class="form__label" for="email">Email</label><input class="form__input" type="email" name="email"
+          required placeholder="nowak@gmail.com">
+      </div>
+      <div class="form__box">
+        <label class="form__label" for="message">Twoja myśl</label><textarea class="form__textarea" name="message"
+          rows="10" required placeholder="Twój genialny pomysł"></textarea>
+      </div>
+      <button class="button form__button" type="submit">Wyślij</button>
+    </form>
+  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer__lead">Dixi &copy; 2020 Wszystkie prawa zastrzeżone</p>
+  </footer>
 </body>
 
 </html>

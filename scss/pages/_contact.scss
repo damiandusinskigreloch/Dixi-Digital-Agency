@@ -1,0 +1,21 @@
+.contact-more-info{
+  padding: 20px 10px;
+  background-color: $dark-blue;
+  &__box{
+    border-bottom: 2px dotted $white;
+    &:last-child{
+      border-bottom: 2px solid $white;
+    }
+  }
+  &__title{
+    color: $white;
+    font-weight: 600;
+    font-size: 2.4rem;
+    margin-top: 20px;
+  }
+  &__lead{
+    color: $white;
+    padding-bottom: 25px;
+  }
+
+}

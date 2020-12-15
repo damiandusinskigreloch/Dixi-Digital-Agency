@@ -69,6 +69,10 @@ ul {
   z-index: 2;
 }
 
+.top-bar__logo {
+  width: 80px;
+}
+
 .top-bar__btn-container {
   font-size: 8rem;
   z-index: 2;
@@ -116,9 +120,14 @@ ul {
   padding: 40px 10px;
 }
 
+.subpage-header__container--dark-blue {
+  background: #282f44;
+}
+
 .subpage-header__title {
   font-size: 3.8rem;
   margin-bottom: 20px;
+  font-weight: 400;
 }
 
 .subpage-header__lead {
@@ -189,7 +198,7 @@ ul {
 
 .footer {
   padding: 20px 10px;
-  background: #333;
+  background: #282f44;
   text-align: center;
 }
 
@@ -201,7 +210,11 @@ ul {
 
 .contact {
   padding: 80px 10px 40px;
-  background: #333;
+  background: #282f44;
+}
+
+.contact--small-padding {
+  padding-top: 0;
 }
 
 .contact__box {
@@ -236,6 +249,7 @@ ul {
   cursor: pointer;
   text-transform: uppercase;
   color: #fdfdfd;
+  font-weight: 600;
   -webkit-transition: .2s ease-in;
   transition: .2s ease-in;
   border-radius: 5px;
@@ -245,6 +259,10 @@ ul {
   font-size: 2.6rem;
   text-transform: uppercase;
   font-weight: 200;
+}
+
+.subpage-secondary-title--white {
+  color: #fdfdfd;
 }
 
 .text-primary-color {
@@ -450,6 +468,14 @@ ul {
   font-size: 1.2rem;
 }
 
+.specialists {
+  padding: 20px 10px;
+}
+
+.specialists__lead {
+  margin-top: 40px;
+}
+
 .applications {
   padding: 10px 20px;
 }
@@ -464,5 +490,30 @@ ul {
 
 .technology-consulting__lead {
   margin-top: 40px;
+}
+
+.contact-more-info {
+  padding: 20px 10px;
+  background-color: #282f44;
+}
+
+.contact-more-info__box {
+  border-bottom: 2px dotted #fdfdfd;
+}
+
+.contact-more-info__box:last-child {
+  border-bottom: 2px solid #fdfdfd;
+}
+
+.contact-more-info__title {
+  color: #fdfdfd;
+  font-weight: 600;
+  font-size: 2.4rem;
+  margin-top: 20px;
+}
+
+.contact-more-info__lead {
+  color: #fdfdfd;
+  padding-bottom: 25px;
 }
 /*# sourceMappingURL=main.css.map */
