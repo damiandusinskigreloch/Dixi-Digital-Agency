@@ -1,0 +1,9 @@
+.testimonial{
+  padding: 60px 10px;
+  background-color: $greey;
+  &__lead{
+    font-size: 2.4rem;
+    font-weight: 200;
+    color: $white;
+  }
+}

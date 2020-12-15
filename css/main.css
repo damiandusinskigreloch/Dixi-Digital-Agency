@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -12,7 +13,7 @@ img {
 
 html {
   font-size: 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 p {
@@ -127,6 +128,37 @@ ul {
   font-weight: 200;
 }
 
+.subpage-header__lead:last-child {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #b3b3b3;
+}
+
+.possibilities {
+  padding: 20px 10px;
+}
+
+.possibilities__item {
+  padding: 10px;
+  font-size: 1.8rem;
+  color: #888;
+  border-bottom: 1px solid #b3b3b3;
+}
+
+.possibilities__item:last-child {
+  border: none;
+}
+
+.testimonial {
+  padding: 60px 10px;
+  background-color: #333;
+}
+
+.testimonial__lead {
+  font-size: 2.4rem;
+  font-weight: 200;
+  color: #fdfdfd;
+}
+
 .form {
   padding: 10px 0 20px;
   border-top: 1px solid #b3b3b3;
@@ -210,7 +242,7 @@ ul {
 }
 
 .subpage-secondary-title {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   text-transform: uppercase;
   font-weight: 200;
 }
@@ -341,8 +373,7 @@ ul {
 }
 
 .raport__lead {
-  padding: 30px 0;
-  border-bottom: 1px solid #b3b3b3;
+  margin-bottom: 40px;
 }
 
 .raport__initiative-container {
@@ -417,5 +448,21 @@ ul {
 
 .team__position {
   font-size: 1.2rem;
+}
+
+.applications {
+  padding: 10px 20px;
+}
+
+.applications__lead {
+  margin-top: 40px;
+}
+
+.technology-consulting {
+  padding: 20px 10px;
+}
+
+.technology-consulting__lead {
+  margin-top: 40px;
 }
 /*# sourceMappingURL=main.css.map */

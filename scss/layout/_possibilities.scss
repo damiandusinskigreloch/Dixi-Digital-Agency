@@ -1,0 +1,12 @@
+.possibilities{
+  padding: 20px 10px;
+  &__item{
+    padding: 10px;
+    font-size: 1.8rem;
+    color: #888;
+    border-bottom: 1px solid $light-greey;
+    &:last-child{
+      border: none;
+    }
+  }
+}

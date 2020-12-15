@@ -11,6 +11,10 @@
     line-height: 1.6;
     margin-bottom: 30px;
     font-weight: 200;
+    &:last-child{
+      padding-bottom: 40px;
+      border-bottom: 1px solid $light-greey;
+    }
   }
 
 }

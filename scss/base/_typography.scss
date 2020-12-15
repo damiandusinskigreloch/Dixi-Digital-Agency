@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600&display=swap');
 
 html{
   font-size: 10px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
+
 p{
-  font-size: 1.8rem;
-  line-height: 1.4;
-  color: $greey;
+font-size: 1.8rem;
+line-height: 1.4;
+color: $greey;
 }
 h1,h2,h3{
   font-weight: 200;
