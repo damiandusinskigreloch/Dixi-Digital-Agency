@@ -1,12 +1,36 @@
-.possibilities{
-  padding: 20px 10px;
-  &__item{
+.possibilities {
+  padding: 60px 10px;
+
+  @include media(sm) {
+    @include width-sm;
+  }
+  @include media (md) {
+    @include width-md;
+  }
+  &__list{
+    @include media (md) {
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+    }
+  }
+  &__item {
     padding: 10px;
     font-size: 1.8rem;
     color: #888;
-    border-bottom: 1px solid $light-greey;
-    &:last-child{
+    border-bottom: 1px solid $light-greey;    
+    &:last-child {
       border: none;
+    }
+    &:nth-child(5){
+      @include media (md) {
+        border: none;
+      }
+    }
+       
+      
+    @include media (md) {
+     flex-basis: 48%;
     }
   }
 }

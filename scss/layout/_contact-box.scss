@@ -1,27 +1,49 @@
-.contact{
-  padding: 80px 10px 40px;
+.contact {
+  padding: 80px 10px 20px;
   background: $dark-blue;
-  &--small-padding{
-    padding-top:0;
+
+  &--small-padding {
+    padding-top: 0;
   }
-  &__box{
+
+  &__box {
     padding: 20px 10px;
     border-top: 1px solid $light-greey;
+
+    @include media(sm) {
+      flex-basis: 45%;
+    }
   }
-  &__title{
+
+  &__title {
     font-size: 2rem;
     color: $white;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 10px;
   }
-  &__link{
+
+  &__link {
     font-size: 1.8rem;
     font-weight: 200;
   }
-  &__adres{
+
+  &__adres {
     color: $white;
     font-weight: 200;
   }
+
+  &__container {
+    @include media(sm) {
+      @include width-sm;
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-between;
+    }
+    @include media (md) {
+      @include width-md;
+    }
+  }
+
 
 }

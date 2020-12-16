@@ -1,26 +1,38 @@
-.top-bar{
+.top-bar {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 10px 20px;
-  overflow: hidden;
+  padding: 5px 20px;
   box-shadow: 2px 0 4px $greey;
-  &__logo-container{
-    z-index: 2;
+  background: $white;
+  @include media(md) {
+    padding: 20px;
+    overflow: visible
   }
-  &__logo{
-    width: 80px;
+
+  &__logo-container {
+    z-index: 3;
   }
-  &__btn-container{
+
+  &__logo {
+    width: 50px;
+  }
+
+  &__btn-container {
     // production style
-    font-size: 8rem;
-    z-index: 2;
+    font-size: 6rem;
+    z-index: 3;
     cursor: pointer;
+
+    @include media(md) {
+      display: none;
+    }
   }
 }
 
-.menu{
+.menu {
   position: absolute;
   top: -100vh;
   left: 0;
@@ -30,20 +42,97 @@
   background-color: $white;
   opacity: 0;
   transition: 1s ease-in-out;
-  z-index: 1;
-  &--show{
+  z-index: 2;
+
+  @include media(md) {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: auto;
+    flex-basis: 50%;
+    opacity: 1;
+  }
+
+  &--show {
+    position: fixed;
     top: 0;
     height: 100vh;
     opacity: 1;
   }
-  &__list{
-    @include position-center;
+
+  &__list {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include media(md) {
+      top: 0;
+      left: 0;
+      transform: none;
+      display: flex;
+      justify-content: space-between;
+
+    }
   }
-  &__item{
+
+  &__list-inbox {
+    @include media(md) {
+      position: absolute;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: none;
+      z-index: 4;
+      padding: 10px 20px;
+      background: $white;
+      border-radius: 5px;
+      width: 250px;
+      border: 1px solid $light-greey;
+      box-shadow: 2px 2px 4px $light-greey;
+      text-align: left;
+    }
+
+    &-active {
+      display: block;
+    }
+
+  }
+
+  &__item {
     line-height: 2;
+
+    &--add-position {
+      position: relative;
+    }
   }
-  &__link{
-  font-size: 2rem;
-  color: $greey;
+
+  &__link {
+    font-size: 2rem;
+    color: $greey;
+
+    @include media(md) {
+      color: $primary-color;
+    }
+
+    &--small {
+      @include media (md) {
+        font-size: 1.6rem;
+      }
+
+    }
+
+    &--disable {
+      display: none;
+
+      @include media(md) {
+        display: inline;
+      }
+    }
+
+    &--active {
+      padding-bottom: 3px;
+      border-bottom: 2px solid $light-greey;
+    }
   }
 }

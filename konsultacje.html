@@ -20,10 +20,15 @@
         <ul class="menu__list">
           <li class="menu__item"><a class="menu__link" href="./">Home</a></li>
           <li class="menu__item"><a class="menu__link" href="o-nas.html">O Nas</a></li>
-          <li class="menu__item"><a class="menu__link" href="aplikacje.html">Aplikacje</a></li>
-          <li class="menu__item"><a class="menu__link" href="konsultacje.html">Konsultacje</a></li>
-          <li class="menu__item"><a class="menu__link" href="specialisci.html">Specialiści</a></li>
+          <li class="menu__item menu__item--add-position"><a class="menu__link menu__link--disable menu__link--active" href="/oferta">Oferta</a>
+          <ul class="menu__list-inbox ">
+            <li class="menu__item"><a class="menu__link menu__link--small" href="aplikacje.html">Aplikacje mobilne</a></li>
+            <li class="menu__item"><a class="menu__link menu__link--small menu__link--active" href="konsultacje.html">Konsultacje techniczne</a></li>
+            <li class="menu__item"><a class="menu__link menu__link--small" href="specialisci.html">Nasi specialiści</a></li>
+          </ul>
+        </li>
           <li class="menu__item"><a class="menu__link" href="kontakt.html">Kontakt</a></li>
+
         </ul>
       </nav>
       <div class="top-bar__btn-container">=
@@ -43,7 +48,9 @@
   </header>
   <main>
     <section class="technology-consulting">
-      <h4 class="subpage-secondary-title">Najlepsze rozwiązania zaczynają się od zadawania właściwych pytań</h4>
+      <div class="technology-consulting__box">
+      <h4 class="subpage-secondary-title technology-consulting__subpage-secondary-title">Najlepsze rozwiązania zaczynają się od zadawania właściwych pytań</h4></div>
+      <div class="technology-consulting__box">
       <p class="technology-consulting__lead">W Dixi nasi projektanci i programiści User Experience pomagają właścicielom
         produktów spojrzeć zarówno z szerszej perspektywy, jak i zagłębić się w szczegóły złożonych ekosystemów
         technicznych. Tworząc skalowalne, łatwe w utrzymaniu i bezpieczne rozwiązania, kierujemy się podejściem
@@ -51,10 +58,11 @@
       <p class="technology-consulting__lead">Niezależnie od tego, czy jest to pełna transformacja cyfrowa, czy
         precyzyjne dostrojenie produktu cyfrowego - niezależnie od tego, w jakiej części procesu potrzebujesz pomocy -
         Dixi jest do Twojej dyspozycji na każdym kroku.</p>
+        </div>
     </section>
     <section class="possibilities">
       <h4 class="subpage-secondary-title">Możliwości</h4>
-      <ul class="possibilites__list">
+      <ul class="possibilities__list">
         <li class="possibilities__item">Cyfrowa transformacja</li>
         <li class="possibilities__item">Internet przedmiotów</li>
         <li class="possibilities__item">Chmura</li>
@@ -64,9 +72,11 @@
       </ul>
     </section>
     <section class="testimonial">
-      <p class="testimonial__lead">Dixi może pomóc w opracowaniu architektury i strategii uruchamiania, aby wprowadzić
-        aplikacje na świat, a także utrzymywać je i odświeżać po ich uruchomieniu.
-      </p>
+      <div class="testimonial__container">
+        <p class="testimonial__lead">Dixi może pomóc w opracowaniu architektury i strategii uruchamiania, aby wprowadzić
+          aplikacje na świat, a także utrzymywać je i odświeżać po ich uruchomieniu.
+        </p>
+      </div>
     </section>
     <!-- Join -->
     <section class="join">
@@ -83,37 +93,39 @@
     </section>
     <!-- Contact -->
     <section class="contact">
-      <div class="contact__box">
-        <p class="contact__title">Lokalizacja</p>
-        <p class="contact__adres">Ul. Powstańców Wielkopolskich 112, Kraków 30-634</p>
-      </div>
-      <div class="contact__box">
-        <p class="contact__title">Współpraca</p>
-        <a class="contact__link" href="mailto:wspolpraca@dixi.pl">wspolpraca@dixi.pl</a>
-      </div>
-      <div class="contact__box">
-        <p class="contact__title">Napisz do Nas</p>
-        <a class="contact__link" href="mailto:info@dixi.pl">info@dixi.pl</a>
-      </div>
-      <div class="contact__box">
-        <p class="contact__title">Bądz na bieżąco</p>
-        <a class="contact__link" href="https://twitter.com/">@dixi</a>
-      </div>
-      <form class="form" action="">
-        <p class="contact__title">Sey Hello</p>
-        <div class="form__box">
-          <label class="form__label" for="name">Imię</label><input class="form__input" type="text" name="name" required
-            placeholder="Adam Nowak"></div>
-        <div class="form__box">
-          <label class="form__label" for="email">Email</label><input class="form__input" type="email" name="email"
-            required placeholder="nowak@gmail.com">
+      <div class="contact__container">
+        <div class="contact__box">
+          <p class="contact__title">Lokalizacja</p>
+          <p class="contact__adres">Ul. Powstańców Wielkopolskich 112, Kraków 30-634</p>
         </div>
-        <div class="form__box">
-          <label class="form__label" for="message">Twoja myśl</label><textarea class="form__textarea" name="message"
-            rows="10" required placeholder="Twój genialny pomysł"></textarea>
+        <div class="contact__box">
+          <p class="contact__title">Współpraca</p>
+          <a class="contact__link" href="mailto:wspolpraca@dixi.pl">wspolpraca@dixi.pl</a>
         </div>
-        <button class="button form__button" type="submit">Wyślij</button>
-      </form>
+        <div class="contact__box">
+          <p class="contact__title">Napisz do Nas</p>
+          <a class="contact__link" href="mailto:info@dixi.pl">info@dixi.pl</a>
+        </div>
+        <div class="contact__box">
+          <p class="contact__title">Bądz na bieżąco</p>
+          <a class="contact__link" href="https://twitter.com/">@dixi</a>
+        </div>
+        <form class="form" action="">
+          <p class="contact__title">Sey Hello</p>
+          <div class="form__box">
+            <label class="form__label" for="name">Imię</label><input class="form__input" type="text" name="name"
+              required placeholder="Adam Nowak"></div>
+          <div class="form__box">
+            <label class="form__label" for="email">Email</label><input class="form__input" type="email" name="email"
+              required placeholder="nowak@gmail.com">
+          </div>
+          <div class="form__box">
+            <label class="form__label" for="message">Twoja myśl</label><textarea class="form__textarea" name="message"
+              rows="10" required placeholder="Twój genialny pomysł"></textarea>
+          </div>
+          <button class="button form__button" type="submit">Wyślij</button>
+        </form>
+      </div>
     </section>
     <!-- Footer -->
     <footer class="footer">

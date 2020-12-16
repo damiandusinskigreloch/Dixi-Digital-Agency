@@ -1,0 +1,38 @@
+// join
+.join {
+  padding: 100px 10px;
+  text-align: left;
+
+  @include media(sm) {
+    @include width-sm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @include media (md) {
+    @include width-md;
+  }
+
+  &__img-box {
+    margin-bottom: 10px;
+
+    @include media(sm) {
+      flex-basis: 40%;
+    }
+  }
+
+  &__lead {
+    margin-bottom: 10px;
+  }
+
+  &__button {
+    width: 100%;
+    margin: 10px 0 20px;
+  }
+
+  &__text-box {
+    @include media(sm) {
+      flex-basis: 50%;
+    }
+  }
+}

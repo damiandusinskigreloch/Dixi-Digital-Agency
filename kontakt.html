@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header class="subpage-header">
+  <header class="subpage-header subpage-header--dark-blue">
     <div class="top-bar">
       <div class="top-bar__logo-container"><img src="img/logo.png" alt="Logo Dixi" class="top-bar__logo">
       </div>
@@ -20,10 +20,15 @@
         <ul class="menu__list">
           <li class="menu__item"><a class="menu__link" href="./">Home</a></li>
           <li class="menu__item"><a class="menu__link" href="o-nas.html">O Nas</a></li>
-          <li class="menu__item"><a class="menu__link" href="aplikacje.html">Aplikacje</a></li>
-          <li class="menu__item"><a class="menu__link" href="konsultacje.html">Konsultacje</a></li>
-          <li class="menu__item"><a class="menu__link" href="specialisci.html">Specialiści</a></li>
-          <li class="menu__item"><a class="menu__link" href="kontakt.html">Kontakt</a></li>
+          <li class="menu__item menu__item--add-position"><a class="menu__link menu__link--disable" href="/oferta">Oferta</a>
+          <ul class="menu__list-inbox ">
+            <li class="menu__item"><a class="menu__link menu__link--small" href="aplikacje.html">Aplikacje mobilne</a></li>
+            <li class="menu__item"><a class="menu__link menu__link--small" href="konsultacje.html">Konsultacje techniczne</a></li>
+            <li class="menu__item"><a class="menu__link menu__link--small" href="specialisci.html">Nasi specialiści</a></li>
+          </ul>
+        </li>
+          <li class="menu__item"><a class="menu__link menu__link--active" href="kontakt.html">Kontakt</a></li>
+
         </ul>
       </nav>
       <div class="top-bar__btn-container">=
@@ -33,8 +38,9 @@
       <h2 class="subpage-header__title subpage-secondary-title--white">Napisz do Nas</h1>
     </div>
   </header>
-    <main>
-      <section class="contact contact--small-padding">
+  <main>
+    <section class="contact contact--small-padding">
+      <div class="contact__container">
         <div class="contact__box">
           <p class="contact__title">Lokalizacja</p>
           <p class="contact__adres">Ul. Powstańców Wielkopolskich 112, Kraków 30-634</p>
@@ -54,8 +60,8 @@
         <form class="form" action="">
           <p class="contact__title">Sey Hello</p>
           <div class="form__box">
-            <label class="form__label" for="name">Imię</label><input class="form__input" type="text" name="name" required
-              placeholder="Adam Nowak"></div>
+            <label class="form__label" for="name">Imię</label><input class="form__input" type="text" name="name"
+              required placeholder="Adam Nowak"></div>
           <div class="form__box">
             <label class="form__label" for="email">Email</label><input class="form__input" type="email" name="email"
               required placeholder="nowak@gmail.com">
@@ -66,30 +72,39 @@
           </div>
           <button class="button form__button" type="submit">Wyślij</button>
         </form>
-      </section>
-      <section class="contact-more-info">
-          <h2 class="subpage-secondary-title subpage-secondary-title--white">Porozmawiajmy, jeśli chcesz…</h2>
-          <div class="contact-more-info__container">
-            <article class="contact-more-info__box">
-              <p class="contact-more-info__title">Współpracować.</p>
-              <p class="contact-more-info__lead">Niezależnie od tego, czy pracujesz ze szkicem serwetkowym, czy z wiodącą platformą technologiczną, chcielibyśmy usłyszeć od Ciebie. Jesteśmy po to, aby wypełnić luki w ugruntowanym zespole lub pomóc zbudować innowacyjne doświadczenie od podstaw. Jeśli uważasz, że bylibyśmy dobrym partnerem, skontaktuj się z nami.</p>
-            </article>
-            <article class="contact-more-info__box">
-              <p class="contact-more-info__title">Dołącz do naszej drużyny.</p>
-              <p class="contact-more-info__lead">Nieustannie poszukujemy utalentowanych osób do naszego zespołu. Nawet jeśli okazja może nie nadejść w tej chwili, chcielibyśmy się przywitać i pozostać w kontakcie. Prosimy o przedstawienie się i rozpoczęcie rozmowy.</p>
-            </article>
-            <article class="contact-more-info__box">
-              <p class="contact-more-info__title">Zrobić wrażenie.</p>
-              <p class="contact-more-info__lead">Staramy się robić to, co słuszne i pomagać kiedykolwiek i gdzie tylko możemy. Jeśli masz partnerstwo, inicjatywę, pasję, skontaktuj się z nami. Razem pomóżmy światu.</p>
-            </article>
-          </div>
-      </section>
-        </main>
-    <!-- Contact -->
-      <!-- Footer -->
-      <footer class="footer">
-        <p class="footer__lead">Dixi &copy; 2020 Wszystkie prawa zastrzeżone</p>
-      </footer>
-    </body>
+    </section>
+    <section class="contact-more-info">
+      <div class="contact-more-info__container">
+        <h2 class="subpage-secondary-title subpage-secondary-title--white">Porozmawiajmy, jeśli chcesz…</h2>
+          <article class="contact-more-info__box">
+            <p class="contact-more-info__title">Współpracować.</p>
+            <p class="contact-more-info__lead">Niezależnie od tego, czy pracujesz ze szkicem serwetkowym, czy z wiodącą
+              platformą technologiczną, chcielibyśmy usłyszeć od Ciebie. Jesteśmy po to, aby wypełnić luki w
+              ugruntowanym
+              zespole lub pomóc zbudować innowacyjne doświadczenie od podstaw. Jeśli uważasz, że bylibyśmy dobrym
+              partnerem, skontaktuj się z nami.</p>
+          </article>
+          <article class="contact-more-info__box">
+            <p class="contact-more-info__title">Dołącz do naszej drużyny.</p>
+            <p class="contact-more-info__lead">Nieustannie poszukujemy utalentowanych osób do naszego zespołu. Nawet
+              jeśli
+              okazja może nie nadejść w tej chwili, chcielibyśmy się przywitać i pozostać w kontakcie. Prosimy o
+              przedstawienie się i rozpoczęcie rozmowy.</p>
+          </article>
+          <article class="contact-more-info__box">
+            <p class="contact-more-info__title">Zrobić wrażenie.</p>
+            <p class="contact-more-info__lead">Staramy się robić to, co słuszne i pomagać kiedykolwiek i gdzie tylko
+              możemy. Jeśli masz partnerstwo, inicjatywę, pasję, skontaktuj się z nami. Razem pomóżmy światu.</p>
+          </article>
+      </div>
+      </div>
+    </section>
+  </main>
+  <!-- Contact -->
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer__lead">Dixi &copy; 2020 Wszystkie prawa zastrzeżone</p>
+  </footer>
+</body>
+
 </html>
-      

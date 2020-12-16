@@ -1,30 +1,45 @@
-.raport{
+.raport {
   padding: 10px;
-  &__lead{
+
+  @include media(sm) {
+    @include width-sm;
+  }
+  @include media (md) {
+    @include width-md;
+  }
+
+  &__lead {
     margin-bottom: 40px;
   }
-  &__initiative-container{
+
+  &__initiative-container {
     margin-top: 25px;
   }
-  &__initiative-box{
+
+  &__initiative-box {
     position: relative;
     padding: 10px 10px;
-    border-top: 1px solid #ddd;
-    &:last-child{
-      border-bottom: 1px solid #ddd;
+    border-top: 1px solid $light-greey;
+
+    &:last-child {
+      border-bottom: 1px solid $light-greey;
     }
   }
-  &__text-more{
+
+  &__text-more {
     display: none;
-    &--show{
+
+    &--show {
       display: block;
       padding: 10px;
     }
   }
-  &__initiative-title{
+
+  &__initiative-title {
     font-size: 2rem;
   }
-  &__btn-show-more{
+
+  &__btn-show-more {
     font-size: 2.2rem;
     position: absolute;
     top: 10px;
@@ -33,31 +48,46 @@
   }
 }
 
-.team{
+.team {
   padding: 20px 10px;
-  &__container{
+
+  @include media(sm) {
+    @include width-sm;
+  }
+  @include media (md) {
+    @include width-md;
+  }
+
+  &__container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  &__box{
+
+  &__box {
     flex-basis: 40%;
     display: block;
     margin: 10px 0 40px;
     text-align: center;
+    @include media (md) {
+      flex-basis: 25%;
+    }
   }
-  &__img{
+
+  &__img {
     display: block;
-    width: 100%;
+    width: 80%;
     border-radius: 50%;
     margin: 0 auto;
   }
-  &__title{
+
+  &__title {
     margin-top: 15px;
     font-size: 1.4rem;
     font-weight: bold;
   }
-  &__position{
+
+  &__position {
     font-size: 1.2rem;
   }
 }

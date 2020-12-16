@@ -1,7 +1,17 @@
 .subpage-header{
+  &--dark-blue{
+    background: $dark-blue;
+  }
   &__container{
     padding: 40px 10px ;
+    @include media(sm){
+      @include width-sm;
+    }
+    @include media (md) {
+      @include width-md;
+    }
   }
+
   &__container--dark-blue{
     background: $dark-blue;
   }
@@ -20,5 +30,6 @@
       border-bottom: 1px solid $light-greey;
     }
   }
+  
 
 }
