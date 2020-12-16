@@ -1028,9 +1028,11 @@ ul {
   }
 }
 
-.applications__box {
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
+@media (min-width: 770px) {
+  .applications__box {
+    -ms-flex-preferred-size: 48%;
+        flex-basis: 48%;
+  }
 }
 
 .technology-consulting {

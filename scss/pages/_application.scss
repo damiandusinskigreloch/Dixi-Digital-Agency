@@ -21,6 +21,8 @@
     }
   }
   &__box{
+    @include media(md) {
     flex-basis: 48%;
+    }
   }
 }
