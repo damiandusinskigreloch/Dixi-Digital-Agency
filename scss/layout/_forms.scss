@@ -2,6 +2,9 @@
   padding: 10px 0 20px;
   border-top: 1px solid $light-greey;
   width: 100%;
+  @include media(sm){
+    flex-basis: 48%;
+  }
 
   &__label {
     display: block;
@@ -13,6 +16,10 @@
       flex-basis: 15%;
       text-align: right;
       margin-right: 5%;
+    }
+    @include media (lg) {
+      flex-basis: 15%;
+      text-align: right;
     }
 
   }
@@ -29,6 +36,9 @@
     @include media (sm) {
       flex-basis: 60%;
     }
+    @include media (lg) {
+      flex-basis: 80%;
+    }
   }
 
   &__button {
@@ -41,6 +51,11 @@
       margin-left: 40%;
       margin-top: 20px;
     }
+    @include media (lg) {
+      width: 80%;
+      margin-left: 20%;
+      margin-top: 20px;
+    }
   }
 
   &__box {
@@ -51,6 +66,9 @@
     }
     @include media (md) {
      justify-content:flex-end;
+    }
+    @include media (lg) {
+     justify-content:flex-start;
     }
 
   }

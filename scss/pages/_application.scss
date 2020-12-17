@@ -8,6 +8,12 @@
     display: flex;
     justify-content: space-between;
   }
+  @include media(lg) {
+    @include width-lg;
+  }
+  @include media (xlg) {
+    @include width-xlg;
+  }
   &__subpage-secondary-title{
     @include media(md){
     text-align: right;

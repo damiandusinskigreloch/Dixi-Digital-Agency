@@ -12,6 +12,12 @@
   @include media (md) {
     @include width-md;
   }
+  @include media (lg) {
+    @include width-lg;
+  }
+  @include media (xlg) {
+    @include width-xlg;
+  }
 
   &__img-box {
     margin-bottom: 10px;

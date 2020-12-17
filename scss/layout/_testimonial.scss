@@ -6,6 +6,9 @@
     @include media(sm) {
       @include width-sm;
     }
+    @include media (xlg) {
+      @include width-xlg;
+    }
   }
 
   &__lead {

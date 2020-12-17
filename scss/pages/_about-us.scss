@@ -7,13 +7,31 @@
   @include media (md) {
     @include width-md;
   }
+  @include media (lg) {
+    @include width-lg;
+  }
+  @include media (xlg) {
+    @include width-xlg;
+  }
+  &__flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 
   &__lead {
     margin-bottom: 40px;
+    @include media(lg){
+      flex-basis: 48%;
+    }
   }
 
   &__initiative-container {
     margin-top: 25px;
+    @include media(lg){
+      margin-top: 0;
+      flex-basis: 48%;
+    }
   }
 
   &__initiative-box {
@@ -56,6 +74,9 @@
   }
   @include media (md) {
     @include width-md;
+  }
+  @include media (xlg) {
+    @include width-xlg;
   }
 
   &__container {

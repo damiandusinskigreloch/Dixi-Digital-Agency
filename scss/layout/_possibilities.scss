@@ -1,4 +1,5 @@
 .possibilities {
+  position: relative;
   padding: 60px 10px;
 
   @include media(sm) {
@@ -7,11 +8,44 @@
   @include media (md) {
     @include width-md;
   }
+  @include media (lg) {
+    @include width-lg;
+  }
+  @include media (xlg) {
+    @include width-xlg;
+  }
+
+  &__img-container{
+    position: absolute;
+    top: 0;
+    right: -35%;
+    width: 600px;
+    @include media (xlg) {
+      right: -25%;
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      top: 2%;
+      left: 2%;
+      width: 100%;
+      height: 100%;
+      background: $primary-color;
+      z-index: 0;
+    }
+  } 
+  &__img{
+    position: relative;
+    z-index: 1;
+  }
   &__list{
     @include media (md) {
      display: flex;
      justify-content: space-between;
      flex-wrap: wrap;
+    }
+    @include media (lg) {
+      width: 60%;
     }
   }
   &__item {

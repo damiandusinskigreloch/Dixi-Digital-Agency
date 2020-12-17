@@ -6,12 +6,22 @@
     padding-top: 0;
   }
 
+  &__boxs {
+    @include media(sm){
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+    @include media(lg){
+      flex-basis: 48%;
+    }
+  }
   &__box {
-    padding: 20px 10px;
+    padding: 20px 0px;
     border-top: 1px solid $light-greey;
-
+    
     @include media(sm) {
-      flex-basis: 45%;
+      flex-basis: 48%;
     }
   }
 
@@ -36,12 +46,22 @@
   &__container {
     @include media(sm) {
       @include width-sm;
-      flex-wrap: wrap;
-      display: flex;
+    }
+      @include media(lg){
       justify-content: space-between;
+      flex-wrap: wrap;
     }
     @include media (md) {
       @include width-md;
+    }
+    @include media (lg) {
+      display: flex;
+      justify-content: space-between;
+      width: 950px;
+      margin: 0 auto;
+    }
+    @include media (xlg) {
+      width: 1300px;
     }
   }
 

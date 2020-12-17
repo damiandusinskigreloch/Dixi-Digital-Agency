@@ -1,28 +1,39 @@
-.specialists{
+.specialists {
   padding: 20px 10px;
+
   @include media(sm) {
     @include width-sm;
   }
+
   @include media(md) {
     @include width-md;
     display: flex;
     justify-content: space-between;
   }
-  &__subpage-secondary-title{
-    @include media(md){
-    text-align: right;
+  @include media(lg) {
+    @include width-lg;
+  }
+  @include media (xlg) {
+    @include width-xlg;
+  }
+  &__subpage-secondary-title {
+    @include media(md) {
+      text-align: right;
     }
   }
-  &__lead{
+
+  &__lead {
     margin-top: 40px;
+
     @include media (md) {
       margin-top: 0;
       margin-bottom: 40px;
-     }
+    }
   }
-  &__box{
+
+  &__box {
     @include media(md) {
       flex-basis: 48%;
-      }  }
+    }
+  }
 }
-

@@ -9,6 +9,13 @@
     @include media(md) {
       @include width-md;
     }
+    @include media(lg) {
+      width: 950px;
+      padding-bottom: 50px;
+    }
+    @include media (xlg) {
+      width: 1300px;
+    }
   }
 
   &__box {
@@ -35,9 +42,10 @@
     @include media(sm){
       margin-top: 0;
       flex-basis: 35%;
-    }
-    @include media(sm){
       text-align: right;
+    }
+    @include media(xlg){
+      flex-basis: 30%;
     }
   }
 
@@ -48,6 +56,9 @@
     border-bottom: 2px dotted $white;
     @include media(sm){
       flex-basis: 60%;
+    }
+    @include media(xlg){
+      flex-basis: 65%;
     }
   }
 

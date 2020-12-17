@@ -10,6 +10,15 @@
     @include media (md) {
       @include width-md;
     }
+    @include media (lg) {
+      @include width-lg;
+    }
+    @include media (xlg) {
+      @include width-xlg;
+    }
+    &--wide{
+      width: 1300px;
+    }
   }
 
   &__container--dark-blue{
