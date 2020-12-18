@@ -17,7 +17,9 @@
       @include width-xlg;
     }
     &--wide{
+      @include media (xlg){
       width: 1300px;
+      }
     }
   }
 

@@ -1,15 +1,24 @@
 .top-bar {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 5px 20px;
-  box-shadow: 2px 0 4px $greey;
   background: $white;
-  @include media(md) {
-    padding: 20px;
-    overflow: visible
+  box-shadow: 0 2px 4px $greey;
+
+  &__container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px 20px;
+    background: $white;
+
+    @include media(md) {
+      padding: 20px;
+      overflow: visible
+    }
+
+    @include media(xlg) {
+      @include width-xlg;
+    }
   }
 
   &__logo-container {
@@ -23,7 +32,7 @@
   &__btn-container {
     // production style
     font-size: 6rem;
-    z-index: 3;
+    z-index: 2;
     cursor: pointer;
 
     @include media(md) {
@@ -34,12 +43,12 @@
 
 .menu {
   position: absolute;
-  top: -100vh;
+  top: -90vh;
   left: 0;
   right: 0;
   height: 100vh;
   text-align: center;
-  background-color: $white;
+  background-color: $greey;
   opacity: 0;
   transition: 1s ease-in-out;
   z-index: 2;
@@ -51,6 +60,14 @@
     height: auto;
     flex-basis: 50%;
     opacity: 1;
+  }
+
+  @include media(lg) {
+    flex-basis: 45%;
+  }
+
+  @include media(xlg) {
+    flex-basis: 35%;
   }
 
   &--show {
@@ -72,8 +89,10 @@
       transform: none;
       display: flex;
       justify-content: space-between;
+      background: $white;
 
     }
+
   }
 
   &__list-inbox {
@@ -109,7 +128,7 @@
 
   &__link {
     font-size: 2rem;
-    color: $greey;
+    color: $white;
 
     @include media(md) {
       color: $primary-color;

@@ -16,10 +16,14 @@
   }
 
   &__img-container{
+    display: none;
+    @include media (lg) {
+    display: block;
     position: absolute;
     top: 0;
     right: -35%;
     width: 600px;
+    }
     @include media (xlg) {
       right: -25%;
     }

@@ -9,13 +9,17 @@
 
     @include media(sm) {
       height: 70vh;
+      background: url("../img/showcase-md.jpg") no-repeat center center/cover;
+
     }
 
     @include media(md) {
-      height: 90vh;
-    }
-    @include media(lg) {
       height: 70vh;
+
+    }
+    @include media(xlg) {
+      height: 50vh;
+
     }
   }
 
@@ -25,6 +29,9 @@
     color: $greey;
     text-align: right;
 
+    @include media(sm) {
+      font-size: 3rem;
+    }
     @include media(md) {
       font-size: 3.6rem;
     }
